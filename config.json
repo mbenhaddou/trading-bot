@@ -1,0 +1,204 @@
+{
+    "base_url": "https://paper-api.alpaca.markets",
+    "data_url": "https://data.alpaca.markets",
+    "trading_loop_interval": 10,
+    "initial_capital": 100000.0,
+    "risk_per_trade_percent": 1.0,
+    "max_open_positions": 20,
+    "max_drawdown_percent": 25.0,
+    "daily_loss_limit_percent": 15.0,
+    "training_max_drawdown_percent": 30.0,
+    "training_daily_loss_limit_percent": 20.0,
+    "rebalance_threshold_value": 100,
+
+    "mode": "simulation" ,
+
+    "simulation": {
+        "enabled": true,
+        "timeframe": "1Day",
+        "historical_limit": 1000,
+        "warmup_period": 50,
+        "commission_per_share": 0.0,
+        "slippage_bps": 5,
+        "use_random_slippage": true,
+        "use_realistic_fills": true,
+        "market_impact_model": "linear",
+        "partial_fill_probability": 0.1,
+        "order_rejection_probability": 0.02,
+        "export_results": true,
+        "monte_carlo_runs": 0,
+        "walk_forward_optimization": false,
+        "out_of_sample_testing": false
+    },
+
+    "fallback_to_simulation_on_close": true,
+
+    "max_position_size_percent": 20,
+    "max_correlation": 0.7,
+    "var_limit_percent": 5,
+    "max_portfolio_risk_percent": 15,
+    "max_orders_per_minute": 60,
+    "min_profit_threshold": 0.001,
+    "max_leverage": 2.0,
+    "initial_seed_via_broker": false,
+
+    "strategy": {
+        "type": "hft",
+        "params": {
+            "lookback_period": 20,
+            "sma_short": 10,
+            "sma_long": 50,
+            "hft_threshold": 0.001,
+            "min_volatility": 2,
+            "position_sizing": "equal_weight",
+            "arb_threshold_multiplier": 0.02,
+            "risk_per_trade": 0.01,
+            "momentum_rsi_threshold": 60,
+            "mean_reversion_zscore": 1.5,
+            "microstructure_imbalance": 0.2
+        }
+    },
+
+    "symbols_to_trade": [
+        "TSLA", "NVDA", "AMD", "GME", "AMC",
+        "PLTR", "COIN", "RIVN", "LCID", "SOFI",
+        "DKNG", "HOOD", "RBLX", "SNAP", "PINS",
+        "AAPL", "ROKU", "BYND", "NIO", "XPEV", "MSFT"
+    ],
+
+    "high_volatility_scan": {
+        "enabled": true,
+        "min_volatility_percent": 2.0,
+        "min_volume": 1000000,
+        "max_stocks": 10,
+        "scan_interval_minutes": 30
+    },
+
+    "hft_settings": {
+        "use_limit_orders": true,
+        "slippage_tolerance": 0.001,
+        "order_timeout_seconds": 5,
+        "cancel_unfilled_orders": true,
+        "use_adaptive_sizing": true,
+        "enable_momentum": true,
+        "enable_mean_reversion": true,
+        "enable_statistical_arbitrage": true,
+        "enable_market_microstructure": true,
+        "min_signals_to_trade": 1
+    },
+
+    "risk_management": {
+        "use_stop_loss": true,
+        "stop_loss_atr_multiplier": 2,
+        "use_take_profit": true,
+        "take_profit_atr_multiplier": 3,
+        "use_trailing_stop": true,
+        "trailing_stop_percent": 2.0,
+        "position_sizing_method": "volatility",
+        "max_sector_exposure": 0.4,
+        "use_kelly_criterion": false
+    },
+
+    "performance_tracking": {
+        "track_strategy_performance": true,
+        "min_trades_for_stats": 20,
+        "performance_window_days": 30,
+        "adjust_sizing_by_performance": true
+    },
+
+    "backtesting": {
+        "start_date": null,
+        "end_date": null,
+        "benchmark_symbol": "SPY",
+        "calculate_alpha_beta": true,
+        "transaction_cost_model": "fixed",
+        "use_adjusted_prices": true
+    },
+
+    "optimization": {
+        "enabled": false,
+        "method": "grid_search",
+        "parameters_to_optimize": [
+            "strategy.params.lookback_period",
+            "strategy.params.sma_short",
+            "strategy.params.sma_long"
+        ],
+        "optimization_metric": "sharpe_ratio",
+        "min_samples": 100
+    },
+
+    "rl_config" : {
+        "enable_rl": true,
+        "rl_training_mode": false,
+        "rl_model_path": "best_rl_model.pth",
+        "rl_confidence_threshold": 0.7,
+        "rl_fallback_to_heuristic": true,
+        "rl_learning_rate": 1e-4,
+        "rl_training_episodes": 1000,
+        "rl_simulation_steps": 500,
+        "rl_save_interval": 100,
+
+
+        "rl_max_position_size": 0.1,
+        "rl_max_portfolio_risk": 0.05,
+        "rl_stop_loss_multiplier": 2.0,
+
+        "rl_episode_length_hours": 1,
+        "rl_reward_scaling": 1000,
+        "rl_exploration_decay": 0.995,
+        "rl_memory_size": 10000,
+        "rl_batch_size": 32,
+        "rl_target_update_frequency": 1000,
+
+        "rl_lookback_window": 100,
+        "rl_feature_scaling": "minmax",
+        "rl_technical_indicators": [
+            "rsi", "macd", "bollinger_bands", "atr", "stochastic"
+        ],
+
+        "rl_strategy_weights": {
+            "momentum": 0.3,
+            "mean_reversion": 0.3,
+            "statistical_arbitrage": 0.2,
+            "market_making": 0.2
+        },
+
+      "online_rl": {
+        "enabled": true,
+        "start_date": "2025-01-01",
+        "end_date": "2025-08-01",
+        "continuous_adaptation": true,
+        "update_frequency": 5,
+        "learning_rate": 5e-5
+    }
+    },
+
+      "training_phases": {
+        "exploration": {
+            "start": 0,
+            "episodes": 5000,
+            "exploration_noise": 0.3,
+            "description": "Explore all data segments uniformly",
+            "validation_freq": 100
+        },
+        "refinement": {
+            "start": 5000,
+            "episodes": 3000,
+            "exploration_noise": 0.1,
+            "description": "Refine policy on challenging segments",
+            "validation_freq": 50
+        },
+        "optimization": {
+            "start": 8000,
+            "episodes": 2000,
+            "exploration_noise": 0.01,
+            "description": "Verify generalization",
+            "validation_freq": 25
+        }
+    },
+
+
+    "enable_emergency_stop": true,
+    "enable_dashboard": true,
+    "log_level": "INFO"
+}

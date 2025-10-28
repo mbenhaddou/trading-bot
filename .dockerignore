@@ -1,0 +1,26 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+env/
+
+# Testing
+.pytest_cache/
+tests/
+
+# Logs and data
+logs/
+training_logs/
+simulation_cache/
+models/*.pth
+
+# Documentation
+*.md
+docs/
+
+# CI/CD
+.github/

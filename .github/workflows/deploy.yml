@@ -1,0 +1,18 @@
+# .github/workflows/deploy.yml
+# TODO: Copy content from artifact: cicd_pipeline
+# This is a placeholder
+
+name: Build and Deploy Trading Bot
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: echo "TODO: Add CI/CD pipeline content"

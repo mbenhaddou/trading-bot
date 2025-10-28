@@ -1,0 +1,30 @@
+{
+  "registry": "ghcr.io",
+  "repository": "yourusername/trading-bot",
+  "environments": {
+    "development": {
+      "url": "localhost:5000",
+      "replicas": 1,
+      "resources": {
+        "cpu": "0.5",
+        "memory": "512Mi"
+      }
+    },
+    "staging": {
+      "url": "staging.trading-bot.example.com",
+      "replicas": 2,
+      "resources": {
+        "cpu": "1",
+        "memory": "1Gi"
+      }
+    },
+    "production": {
+      "url": "trading-bot.example.com",
+      "replicas": 3,
+      "resources": {
+        "cpu": "2",
+        "memory": "2Gi"
+      }
+    }
+  }
+}

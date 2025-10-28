@@ -1,0 +1,17 @@
+# docker-compose.yml
+# TODO: Copy content from artifact: docker_compose_complete
+# This is a placeholder - replace with actual content
+
+version: '3.9'
+
+services:
+  trading-bot:
+    build: .
+    container_name: trading-bot-paper
+    environment:
+      ALPACA_API_KEY: ${ALPACA_API_KEY}
+      ALPACA_API_SECRET: ${ALPACA_API_SECRET}
+    volumes:
+      - ./models:/app/models
+      - ./training_logs:/app/training_logs
+      - ./logs:/app/logs

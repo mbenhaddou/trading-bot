@@ -1,0 +1,38 @@
+# Environment
+.env
+.env.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+venv/
+env/
+*.egg-info/
+
+# Logs
+logs/
+*.log
+
+# Training artifacts
+training_logs/
+models/*.pth
+simulation_cache/
+
+# CI/CD
+versions.json
+docker-compose.development.yml
+docker-compose.staging.yml
+docker-compose.production.yml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
