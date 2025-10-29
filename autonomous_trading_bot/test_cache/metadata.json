@@ -1,0 +1,186 @@
+{
+  "43a0d1110e64edbd373e3cde2ff35cec": {
+    "symbol": "AAPL",
+    "start_date": "2025-07-12",
+    "end_date": "2025-10-10",
+    "interval": "1m",
+    "cached_at": "2025-10-10T00:27:52.623892",
+    "rows": 8286
+  },
+  "c40fd9df54d460503e431b439ca8fe29": {
+    "symbol": "MSFT",
+    "start_date": "2025-08-11",
+    "end_date": "2025-10-10",
+    "interval": "5m",
+    "cached_at": "2025-10-10T00:27:52.874815",
+    "rows": 3318
+  },
+  "e1bdb82fae12d796b3878fb3157f09f7": {
+    "symbol": "MSFT",
+    "start_date": "2024-10-10",
+    "end_date": "2025-10-10",
+    "interval": "1h",
+    "cached_at": "2025-10-10T00:27:53.049355",
+    "rows": 1738
+  },
+  "b855c745d849d0d8b3537ef58f2582ad": {
+    "symbol": "MSFT",
+    "start_date": "2023-01-14",
+    "end_date": "2025-10-10",
+    "interval": "1d",
+    "cached_at": "2025-10-10T00:27:53.211846",
+    "rows": 686
+  },
+  "602ac402b4e5f9760dc67f5bf510ea7c": {
+    "symbol": "AAPL",
+    "start_date": "2025-09-26",
+    "end_date": "2025-10-10",
+    "interval": "1m",
+    "cached_at": "2025-10-10T00:30:36.385062",
+    "rows": 3610
+  },
+  "f250fee20a8b3bddb3ee896d2a4ffbbf": {
+    "symbol": "AAPL",
+    "start_date": "2025-10-07",
+    "end_date": "2025-10-10",
+    "interval": "1m",
+    "cached_at": "2025-10-10T00:30:36.543567",
+    "rows": 882
+  },
+  "8aa8bc9785b0a9235f61bfc4f6023baa": {
+    "symbol": "MSFT",
+    "start_date": "2025-10-05",
+    "end_date": "2025-10-10",
+    "interval": "5m",
+    "cached_at": "2025-10-10T00:30:36.648075",
+    "rows": 276
+  },
+  "1b2598f565628b2d38ba7bfe2a15eaf6": {
+    "symbol": "GOOGL",
+    "start_date": "2025-09-10",
+    "end_date": "2025-10-10",
+    "interval": "5m",
+    "cached_at": "2025-10-10T00:30:36.848643",
+    "rows": 1690
+  },
+  "71a34b356c89e9ccc22e1d91afade449": {
+    "symbol": "GOOGL",
+    "start_date": "2025-08-26",
+    "end_date": "2025-10-10",
+    "interval": "15m",
+    "cached_at": "2025-10-10T00:30:37.019709",
+    "rows": 830
+  },
+  "121eacf1734f9772e95d4fc6eba322cd": {
+    "symbol": "GOOGL",
+    "start_date": "2025-04-13",
+    "end_date": "2025-10-10",
+    "interval": "1h",
+    "cached_at": "2025-10-10T00:30:37.152500",
+    "rows": 864
+  },
+  "26a714b2cba8631ff09dabd86ccab115": {
+    "symbol": "GOOGL",
+    "start_date": "2024-10-10",
+    "end_date": "2025-10-10",
+    "interval": "1d",
+    "cached_at": "2025-10-10T00:30:37.242954",
+    "rows": 250
+  },
+  "bf4484a71f43c21e35a4a20f14123edb": {
+    "symbol": "TSLA",
+    "start_date": "2025-09-10",
+    "end_date": "2025-10-10",
+    "interval": "1m",
+    "cached_at": "2025-10-10T00:30:40.954052",
+    "rows": 8356
+  },
+  "447bbb7d1da7896decb6082c1cdd70bd": {
+    "symbol": "AAPL",
+    "start_date": "2025-10-03",
+    "end_date": "2025-10-10",
+    "interval": "1m",
+    "cached_at": "2025-10-10T00:30:41.155221",
+    "rows": 1660
+  },
+  "2ec8b35a10505a567cabd4a7dc8d53fc": {
+    "symbol": "MSFT",
+    "start_date": "2025-10-03",
+    "end_date": "2025-10-10",
+    "interval": "1m",
+    "cached_at": "2025-10-10T00:30:41.314506",
+    "rows": 1629
+  },
+  "d33d22423d081332b7180bcff1b3a387": {
+    "symbol": "AAPL",
+    "start_date": "2025-10-07",
+    "end_date": "2025-10-10",
+    "interval": "1d",
+    "cached_at": "2025-10-10T00:30:41.466560",
+    "rows": 3
+  },
+  "a288ae0fa5415393369715d62221c237": {
+    "symbol": "MSFT",
+    "start_date": "2025-10-07",
+    "end_date": "2025-10-10",
+    "interval": "1d",
+    "cached_at": "2025-10-10T00:30:41.579434",
+    "rows": 3
+  },
+  "3ac1b38e90e9366c72286fe61563e341": {
+    "symbol": "GOOGL",
+    "start_date": "2025-10-07",
+    "end_date": "2025-10-10",
+    "interval": "1d",
+    "cached_at": "2025-10-10T00:30:41.672236",
+    "rows": 3
+  },
+  "b6c8ba44845554aac367a6aa8de46ba5": {
+    "symbol": "NVDA",
+    "start_date": "2025-09-30",
+    "end_date": "2025-10-10",
+    "interval": "5m",
+    "cached_at": "2025-10-10T00:30:43.143125",
+    "rows": 618
+  },
+  "fec65672158613b57d341d37d094f76c": {
+    "symbol": "AAPL",
+    "start_date": "2025-10-05",
+    "end_date": "2025-10-10",
+    "interval": "5m",
+    "cached_at": "2025-10-10T09:33:26.742853",
+    "rows": 290
+  },
+  "91cb8f2c82ee693eb6f053f37dea19e7": {
+    "symbol": "AAPL",
+    "start_date": "2025-10-07",
+    "end_date": "2025-10-10",
+    "interval": "15m",
+    "cached_at": "2025-10-10T09:33:26.853439",
+    "rows": 77
+  },
+  "808926f470c724303f0c875e39fd1900": {
+    "symbol": "AAPL",
+    "start_date": "2025-10-07",
+    "end_date": "2025-10-10",
+    "interval": "1h",
+    "cached_at": "2025-10-10T09:33:26.960490",
+    "rows": 21
+  },
+  "5c2a9743c6227c6b907ec6e58d850984": {
+    "symbol": "AAPL",
+    "start_date": "2025-09-28",
+    "end_date": "2025-10-12",
+    "interval": "1m",
+    "cached_at": "2025-10-12T11:56:28.264086",
+    "rows": 3516
+  },
+  "e8915935f864edc9da63607073b6caec": {
+    "symbol": "AAPL",
+    "start_date": "2025-09-02",
+    "end_date": "2025-10-12",
+    "interval": "1m",
+    "cached_at": "2025-10-12T11:57:57.153883",
+    "rows": 7412
+  }
+}
