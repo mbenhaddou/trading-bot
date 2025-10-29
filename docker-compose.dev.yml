@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  trading-bot:
+    build:
+      target: development
+
+    volumes:
+      # Mount source code for live editing
+      - .:/app:rw
+
+    environment:
+      LOG_LEVEL: DEBUG
+      ENVIRONMENT: development
+
+    command: /bin/bash
+    stdin_open: true
+    tty: true
+
+    ports:
+      - "8080:8080"  # For dashboard/monitoring
